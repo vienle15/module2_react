@@ -127,6 +127,9 @@ button.sign-in:hover {
   background: salmon;
   cursor: pointer;
 }
+.row mt-3 {
+  padding-top: 30px;
+}
 .top-bar {
   background-color: var(--color-accent);
 }
@@ -237,7 +240,6 @@ button.sign-in:hover {
   width: 100%;
   object-fit: cover;
 }
-
 .products-main h1 {
   justify-content: center;
   align-items: center;
@@ -253,8 +255,6 @@ button.sign-in:hover {
   display: flex;
 }
 
-.random-products {
-}
 /* section.secContent {
   padding: 20px;
 } */

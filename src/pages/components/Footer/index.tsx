@@ -1,173 +1,146 @@
-<>
-  import {"{"} Component, ReactNode {"}"} from "react"; class Header extends
-  Component {"{"}
-  render() {"{"}
-  return (
-  <header>
-    <div>
-      <div className="top-bar d-flex justify-content-between container py-1">
-        <div className="logo">
-          <img src="./bt.img/top-left-img.png " alt="" width={20} />
-        </div>
-        <ul className="info d-flex">
-          <li>Find a Store</li>
-          <li>Help</li>
-          <li>Join us</li>
-          <li id="login-nosuccess" />
-        </ul>
-      </div>
-      <div>
-        <nav className="navbar navbar-expand-lg container">
-          <div className="container-fluid justify-content-end">
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon" />
-            </button>
-            <div
-              className="collapse navbar-collapse justify-content-between"
-              id="navbarSupportedContent"
-            >
-              <div className="container-fluid-img">
-                <img
-                  className="navbar-brand"
-                  src="./bt.img/nike logo.png"
-                  width={60}
-                  alt=""
-                />
+import React, { Component } from "react";
+import "bootstrap/dist/css/bootstrap.css";
+
+export class Footers extends Component {
+  render() {
+    return (
+      <footer className="text-center text-lg-start bg-light text-muted">
+        {/* Section: Social media */}
+        <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+          {/* Left */}
+          <div className="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          {/* Left */}
+          {/* Right */}
+          <div>
+            <a href="" className="me-4 text-reset">
+              <i className="fa-brands fa-facebook" />
+            </a>
+            <a href="" className="me-4 text-reset">
+              <i className="fa-brands fa-twitter" />
+            </a>
+            <a href="" className="me-4 text-reset">
+              <i className="fab fa-google" />
+            </a>
+            <a href="" className="me-4 text-reset">
+              <i className="fab fa-instagram" />
+            </a>
+            <a href="" className="me-4 text-reset">
+              <i className="fab fa-linkedin" />
+            </a>
+            <a href="" className="me-4 text-reset">
+              <i className="fab fa-github" />
+            </a>
+          </div>
+          {/* Right */}
+        </section>
+        {/* Section: Social media */}
+        {/* Section: Links  */}
+        <section className="secContent">
+          <div className="container text-center text-md-start mt-5">
+            {/* Grid row */}
+            <div className="row mt-3">
+              {/* Grid column */}
+              <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                {/* Content */}
+                <h6 className="text-uppercase fw-bold mb-4">
+                  <i className="fas fa-gem me-3" />
+                  Giày Chú Viễn
+                </h6>
+                <p>Giày chú Viễn, đỉnh của giày.</p>
               </div>
-              <ul className="navbar-nav mb-2 mb-lg-0">
-                <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">
-                    New &amp; Features
+              {/* Grid column */}
+              {/* Grid column */}
+              <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                {/* Links */}
+                <h6 className="text-uppercase fw-bold mb-4">Sản Phẩm</h6>
+                <p>
+                  <a href="#!" className="text-reset">
+                    Giày đi rừng
                   </a>
-                </li>
-                <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Men
+                </p>
+                <p>
+                  <a href="#!" className="text-reset">
+                    Giày chiến đấu
                   </a>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Action
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
-                    </li>
-                    <li>
-                      <hr className="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Women
+                </p>
+                <p>
+                  <a href="#!" className="text-reset">
+                    Giày quái dị
                   </a>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Action
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
-                    </li>
-                    <li>
-                      <hr className="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Kids
+                </p>
+                <p>
+                  <a href="#!" className="text-reset">
+                    Giày người thường
                   </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Sale
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    SNKRS
-                  </a>
-                </li>
-              </ul>
-              <div className="d-flex" role="search">
-                <input
-                  className="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                  id="input-search"
-                />
-                <button className="btn btn-success">
-                  <a href="#carousel-banner" id="label-smooth">
-                    🔎
-                  </a>
-                </button>
-                <a className="top-cart-top" href="cart.html">
-                  <img className="top-cart" src="./bt.img/bag.svg" width={30} />
-                </a>
+                </p>
               </div>
+              {/* Grid column */}
+              {/* Grid column */}
+              <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                {/* Links */}
+                <h6 className="text-uppercase fw-bold mb-4">Thương Hiệu</h6>
+                <p>
+                  <a href="#!" className="text-reset">
+                    Nike
+                  </a>
+                </p>
+                <p>
+                  <a href="#!" className="text-reset">
+                    Valentino
+                  </a>
+                </p>
+                <p>
+                  <a href="#!" className="text-reset">
+                    Balenciaga
+                  </a>
+                </p>
+                <p>
+                  <a href="#!" className="text-reset">
+                    Gucci
+                  </a>
+                </p>
+              </div>
+              {/* Grid column */}
+              {/* Grid column */}
+              <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                {/* Links */}
+                <h6 className="text-uppercase fw-bold mb-4">Liên Hệ</h6>
+                <p>
+                  <i className="fas fa-home me-3" /> Detroit
+                </p>
+                <p>
+                  <i className="fas fa-envelope me-3" />
+                  eminem@example.com
+                </p>
+                <p>
+                  <i className="fas fa-phone me-3" /> + 01 234 567 88
+                </p>
+                <p>
+                  <i className="fas fa-print me-3" /> + 01 234 567 89
+                </p>
+              </div>
+              {/* Grid column */}
             </div>
+            {/* Grid row */}
           </div>
-        </nav>
-      </div>
-      <div
-        id="carouselExampleSlidesOnly"
-        className="carousel slide container"
-        data-bs-ride="carousel"
-      >
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <p className="d-block w-1000">Giày đi rừng</p>
-          </div>
-          <div className="carousel-item">
-            <p className="d-block w-1000">Giày độc lạ</p>
-          </div>
-          <div className="carousel-item">
-            <p className="d-block w-1000">Giày đá bóng</p>
-          </div>
+        </section>
+        {/* Section: Links  */}
+        {/* Copyright */}
+        <div
+          className="text-center p-4"
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
+        >
+          © 2045 Copyright:
+          <a className="text-reset fw-bold" href="#">
+            Viễn Bán Giày
+          </a>
         </div>
-      </div>
-    </div>
-  </header>
-  );
-  {"}"}
-  {"}"}
-  export default Header;
-</>;
+        {/* Copyright */}
+      </footer>
+    );
+  }
+}
+
+export default Footers;
