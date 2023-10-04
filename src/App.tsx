@@ -1,24 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import UserManagement from "./pages/UseStateEX";
+import BMI from "./pages/UseEffect";
 
 function App() {
+  const [count, setCount] = useState(0);
+  const [data, setData] = useState<number[]>([]);
+
+  // const [input, valueInput] = useState < number;
+
+  const handleChangeCount = () => {
+    setCount(count + 1);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          xin chào bài 9
-        </a>
-      </header>
+      <button onClick={handleChangeCount}>Up</button>
+      <br />
+      <br />
+      <h1>{count}</h1>
+      <UserManagement />
+      <BMI />
     </div>
   );
 }
