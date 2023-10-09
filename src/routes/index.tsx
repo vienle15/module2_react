@@ -1,12 +1,13 @@
 import About from "../pages/About";
 import Admin from "../pages/Admin";
 import ProductManagement from "../pages/Admin/ProductManagement";
-import Error from "../pages/Error";
+import Clients from "../pages/Clients";
+import Contact from "../pages/Contact";
 import Home from "../pages/Home";
-import Product from "../pages/Products";
-import User from "../pages/User";
-import Favourite from "../pages/User/Favourite";
-import Payment from "../pages/User/Payment";
+import Portfolio from "../pages/Portfolio";
+import Product from "../pages/Product";
+import Services from "../pages/Services";
+import Team from "../pages/Team";
 
 export const privateRoute = [
   {
@@ -30,10 +31,36 @@ export const publicRouter = [
     title: "Home",
   },
   {
+    path: "/services",
+    element: <Services />,
+    title: "Services",
+  },
+  {
+    path: "/portfolio",
+    element: <Portfolio />,
+    title: "Portfolio",
+  },
+  {
     path: "/about",
     element: <About />,
     title: "About",
   },
+  {
+    path: "/team",
+    element: <Team />,
+    title: "Team",
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+    title: "Contact",
+  },
+  {
+    path: "/clients",
+    element: <Clients />,
+    title: "Clients",
+  },
+
   {
     path: "/product",
     element: <Product />,
@@ -43,17 +70,5 @@ export const publicRouter = [
     path: "/user",
     element: <Product />,
     title: "User",
-    children: [
-      {
-        path: "my-favourite",
-        element: <Favourite />,
-        title: "my favourite",
-      },
-      {
-        path: "payment",
-        element: <Payment />,
-        title: "my payment",
-      },
-    ],
   },
 ];
