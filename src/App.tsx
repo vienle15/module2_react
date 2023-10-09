@@ -1,24 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import Header from "./components/Header";
+import "bootstrap/dist/css/bootstrap.min.css";
+import ModalAuth from "./components/ModalAuth";
 
 function App() {
+  const [show, setShow] = useState(false);
+
+  const handleToggle = () => {
+    setShow(true);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          xin chào bài 9
-        </a>
-      </header>
+      <Header onShow={handleToggle} />
+      <ModalAuth show={show} onClose={() => setShow(false)} />
     </div>
   );
 }
